@@ -1,0 +1,2738 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin cajaopiniones() {
+    padding: 20px 20px 30px 30px;
+    margin: 40px 40px 40px 40px;
+    border: 2px ;
+    background-color: rgba(230, 230, 230, 0.925);
+    display: inline-block;
+    }
+@mixin titulohome() {
+    margin: 0%;
+    padding: 15px 35px 15px 35px;
+    text-align: center;
+    background-color:blanchedalmond;
+    font-family: 'Roboto', sans-serif;
+    color: #383838;
+    font-size: 190%;
+    
+}
+$tipografia-general: 'Quicksand', sans-serif;
+$fuente:200%; 
+$padding:4%;  
+
+@for $i from 1 through 2 {
+    .redes-#{$i} { padding-right: 10px; }
+  }
+
+
+ 
+body{
+    header{
+        background-color: #383838;
+        display: flex;
+        flex-direction: row; 
+        justify-content: left;
+        
+    }
+    main{
+        .imghome{ display: flex; 
+            flex-direction: row; 
+            justify-content: center;
+           
+            
+        }
+        section{
+            .vendido__titulo{
+                @include titulohome();
+               
+            }
+        }
+        .vendido{
+                color: grey;
+                background: blanchedalmond;
+                font-family: $tipografia-general;
+                font-size: $fuente/2;                                       /*operaciones*/
+                text-align: center;
+                display: grid;    
+                grid-template-columns: 460px 460px 460px 460px;    
+                grid-template-rows: auto; 
+                align-items: center;
+                justify-items: center;
+                .box{
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    overflow: hidden;
+                    position: relative;
+                    overflow: hidden;
+                    position: relative;
+                    margin: 1.5%;
+                    object-fit: cover;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    .hover{
+                        width: 0%;
+                        height: 100%;
+                        background-color: rgba(56, 53, 53, 0.568);
+                        position: absolute;
+                        top: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                        transition: .4s all;
+                        h4{
+                            font-family: $tipografia-general;
+                            color: aliceblue;
+                            text-shadow: 1 px 1 px 1 px black;
+                            font-size: 1em;
+                            text-transform: uppercase;
+                        }
+
+                    }
+                    &:hover .hover{
+                        width: 100%;
+                    }
+                      
+                }
+                
+                
+                
+
+        }
+        .opiniones__titulo{
+            margin: 0;
+            padding: 15px 35px 15px 35px;
+            text-align: center;
+            background-color: blanchedalmond;
+            font-family: $tipografia-general;
+            color: #383838;
+            font-size: 140%;
+
+        }
+        .opiniones{
+            background: blanchedalmond;
+            color: rgb(62, 62, 63);
+            font-family: $tipografia-general;
+            text-align: center;
+            display: grid;  	   
+            grid-template-columns: 460px 460px 460px 460px;           
+            grid-template-rows: auto; 
+            align-items: center;
+            justify-items: center;
+            .opiniones__persona{
+                @include cajaopiniones();
+
+                &:hover{
+                    background-color: rgba(85, 80, 65, 0.5);
+                }
+                .fotopersona{
+                    margin: auto;
+                    display: flex;
+                    flex-direction: row; 
+                    justify-content: center;
+                }
+                .estrella{
+                    margin: auto;
+                    display: flex;
+                    flex-direction: row; 
+                    justify-content: center;
+
+                }
+
+            }
+        }
+        .milanesa__titulo{
+            font-family: $tipografia-general;
+            font-weight: bold;
+            font-size: 150%;
+            margin: 0%;
+            padding-bottom: 1%;
+            padding-top: 1%;
+            text-align: center;
+            background-color: rgb(107, 122, 143);}
+        .milanesa{
+            font-family: 'Quicksand', sans-serif;
+            font-size: medium;
+            text-align: center;
+            padding: 0%;
+            margin: 0%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 2px;
+            background-color: blanchedalmond;
+            .milanesa__lista{
+                font-family: 'Quicksand', sans-serif;
+                font-size: medium;
+                text-align: center;
+                padding: 15px 10px 15px 10px;
+                &:hover{
+                    background-color: ghostwhite;
+                    transform: scale(1.10);
+                }
+            }
+        }
+        .titulo{ padding: 0%;
+                 margin: 0%;
+               
+            .sandwiches__titulo{
+                font-family: 'Quicksand', sans-serif;
+                font-weight: bold;
+                font-size: 150%;
+                margin: 0%;
+                padding-bottom: $padding/4;                                               /*operaciones*/
+                padding-top: 1%;
+                text-align: center;
+                background-color: rgb(107, 122, 143);}
+        }
+        .sandwiches{
+            font-family: 'Quicksand', sans-serif;
+            font-size: medium;
+            text-align: center;
+            margin: 0%;
+            padding: 0%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-gap: 2px;
+            justify-items: center;
+            background-color:blanchedalmond;
+           
+            .sandwiches__lista{ 
+                font-family: 'Quicksand', sans-serif;
+                font-size: medium;
+                text-align: center;
+                padding: 15px 10px 15px 10px;
+                &:hover{
+                    transform: scale(1.10);
+                    background-color: ghostwhite;
+                }}
+        }
+        .guarnicion{
+            font-family: 'Quicksand', sans-serif;
+            font-size: medium;
+            text-align: center;
+            padding: 5px 0px 5px 0px;
+            display: grid;
+            grid-template-columns: 0.2fr 0.2fr ;
+            align-items: center;
+            background-color: blanchedalmond;
+            .guarnicion__lista{ 
+                font-family: 'Quicksand', sans-serif;
+                font-size: medium;
+                text-align: center;
+                padding: 15px 10px 15px 10px;
+                &:hover{
+                    background-color: ghostwhite;
+                    transform: scale(1.10);
+                }}
+        }
+        section{
+            .guarnicion__titulo{
+                font-family: 'Quicksand', sans-serif;
+                font-weight: bold;
+                font-size: 150%;
+                margin: 0%;
+                padding: 15px;
+                text-align: center;
+                background-color: rgb(107, 122, 143);
+            }
+        }
+        .tiposdepago{
+            h2{ 
+                font-family: 'Quicksand', sans-serif;
+                font-weight: bold;
+                font-size: 250%;
+                margin: 0%;
+                padding: 25px;
+                text-align: center;
+            background-color: blanchedalmond;}
+            .metodo{
+                font-family: 'Quicksand', sans-serif;
+                font-size: medium;
+                text-align: center;
+                padding: 5px 0px 5px 0px;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: 0.2fr 0.2fr 0.2fr ;
+                align-items: center;
+                background-color: blanchedalmond;
+                div{
+                    .titulometodos{
+                        font-family: 'Quicksand', sans-serif;
+                        font-weight: bold;
+                        font-size: 150%;
+                        margin: 10%;
+                        color: gray;
+                    }
+                    .imgmetodos{
+                        width: 205px;
+                        &:hover{
+                           transform: scale(1.10); 
+                        }
+                    }
+                }
+            }
+        }
+        .pedidowhatsapp{
+            padding: 25px 2px 25px 2px;
+            background-color: blanchedalmond;
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .historia{
+            background-color: blanchedalmond;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 150%;
+            display: flex; 
+            flex-direction: column;
+            justify-content: flex-start;
+            
+            .historia__titulo{
+                font-style: inherit;
+                text-align: center;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 150%;
+                padding-bottom: 15px;
+                padding-top: 15px;
+            }
+            .historia__cuadro{
+                padding:80px 80px 80px 80px;
+                margin-left: 40px;
+                margin-right: 40px;
+                margin-bottom: 100px;
+                margin-top: 25px;
+                border-radius: 2%;
+                background-color: whitesmoke;
+                .portadahistoria{
+                    width: 850px;
+                    float: left;
+                    margin-right: 2%;
+                }
+            }
+        }
+        .trabajaconnosotros{
+            background-color: wheat;
+            text-align: center;
+            font-size: 150%;
+            font-family: 'Quicksand', sans-serif;
+            padding:50px 50px 50px 50px;
+            .trabajaconnosotros__titulo{
+                font-size: 180%;
+                font-weight: bold;
+            }
+
+        }
+        .sumate{
+            font-weight: bold;
+            text-align: center;
+            font-size: 150%;
+            font-family: 'Quicksand', sans-serif;
+            background-color: wheat;
+        }
+        
+        .contactoTitulo{
+            background-color: gainsboro;
+            color:rgb(238, 147, 10);
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+         
+    }
+    .contacto{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 2fr;
+        align-items: center;
+        margin: 0;
+        
+
+        .horario{
+        background-color:blanchedalmond ;
+        text-align: left;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 150%;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 800px;
+        align-items: center;
+        
+        
+        align-items: center;
+        justify-content: center;
+        
+        .imgtelefono{
+            width: 50px;
+            
+        }
+    .horario__titulo{
+        margin: 0;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 150%;
+
+    }}
+        .tabla{
+            background-color: blanchedalmond;
+            text-align: right;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 100%;
+            
+           
+        }  
+    }
+    footer{
+        background-color: rgb(54, 54, 54);
+        color:ghostwhite;
+        font-family: 'Quicksand', sans-serif;
+        div{
+            .link{color: white;}
+            .pie{
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                justify-content: left;
+                text-align: left;
+                font-size: 100%;
+                line-height: 30px;
+            }
+            .redes-1{
+            padding-top: 0;
+            padding-right: 10px;
+            .link{color: white;}
+            .pie1{
+                text-align: right;
+                font-size: 100%;
+                line-height: 30px;
+            }
+            .redes-2{
+                display: flex;
+                flex-direction: row;
+                align-items: right;
+                justify-content: right;
+                
+                padding-right: 5px;
+                padding-bottom: 15px;
+                .link{color: white;}
+                .redeslogo{
+                        margin-left: 15px;
+                        margin-right: 15px;
+                }  
+            }
+        }
+        .logo{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+            .texto{
+                margin: 8px;
+            }
+            .logofooter{
+                width: 200px;
+            }
+            }
+        }
+        
+        
+
+    }
+}
+@media only screen and  (min-width: 1820px) {
+    body{
+        header{
+            background-color: #383838;
+            display: flex;
+            flex-direction: row; 
+            justify-content: left;
+            
+        }
+        main{
+            .imghome{ display: flex; 
+                flex-direction: row; 
+                justify-content: center;
+               
+                
+            }
+            section{
+                .vendido__titulo{
+                    @include titulohome();
+                   
+                }
+            }
+            .vendido{
+                    color: grey;
+                    background: blanchedalmond;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: $fuente/2;                                       /*operaciones*/
+                    text-align: center;
+                    display: grid;    
+                    grid-template-columns: 460px 460px 460px 460px;    
+                    grid-template-rows: auto; 
+                    align-items: center;
+                    justify-items: center;
+                    .box{
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        overflow: hidden;
+                        position: relative;
+                        overflow: hidden;
+                        position: relative;
+                        margin: 1.5%;
+                        object-fit: cover;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        .hover{
+                            width: 0%;
+                            height: 100%;
+                            background-color: rgba(56, 53, 53, 0.568);
+                            position: absolute;
+                            top: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            overflow: hidden;
+                            transition: .4s all;
+                            h4{
+                                font-family: 'Quicksand', sans-serif;
+                                color: aliceblue;
+                                text-shadow: 1 px 1 px 1 px black;
+                                font-size: 1em;
+                                text-transform: uppercase;
+                            }
+    
+                        }
+                        &:hover .hover{
+                            width: 100%;
+                        }
+                          
+                    }
+                    
+                    
+                    
+    
+            }
+            .opiniones__titulo{
+                margin: 0;
+                padding: 15px 35px 15px 35px;
+                text-align: center;
+                background-color: blanchedalmond;
+                font-family: 'Quicksand', sans-serif;
+                color: #383838;
+                font-size: 140%;
+    
+            }
+            .opiniones{
+                background: blanchedalmond;
+                color: rgb(62, 62, 63);
+                font-family: 'Quicksand', sans-serif;
+                text-align: center;
+                display: grid;  	   
+                grid-template-columns: 460px 460px 460px 460px;           
+                grid-template-rows: auto; 
+                align-items: center;
+                justify-items: center;
+                .opiniones__persona{
+                    @include cajaopiniones();
+    
+                    &:hover{
+                        background-color: rgba(85, 80, 65, 0.5);
+                    }
+                    .fotopersona{
+                        margin: auto;
+                        display: flex;
+                        flex-direction: row; 
+                        justify-content: center;
+                    }
+                    .estrella{
+                        margin: auto;
+                        display: flex;
+                        flex-direction: row; 
+                        justify-content: center;
+    
+                    }
+    
+                }
+            }
+            .milanesa__titulo{
+                font-family: 'Quicksand', sans-serif;
+                font-weight: bold;
+                font-size: 150%;
+                margin: 0%;
+                padding-bottom: 1%;
+                padding-top: 1%;
+                text-align: center;
+                background-color: rgb(107, 122, 143);}
+            .milanesa{
+                font-family: 'Quicksand', sans-serif;
+                font-size: medium;
+                text-align: center;
+                padding: 0%;
+                margin: 0%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-gap: 2px;
+                background-color: blanchedalmond;
+                .milanesa__lista{
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 15px 10px 15px 10px;
+                    &:hover{
+                        background-color: ghostwhite;
+                        transform: scale(1.10);
+                    }
+                }
+            }
+            .titulo{ padding: 0%;
+                     margin: 0%;
+                   
+                .sandwiches__titulo{
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font-size: 150%;
+                    margin: 0%;
+                    padding-bottom: $padding/4;                                               /*operaciones*/
+                    padding-top: 1%;
+                    text-align: center;
+                    background-color: rgb(107, 122, 143);}
+            }
+            .sandwiches{
+                font-family: 'Quicksand', sans-serif;
+                font-size: medium;
+                text-align: center;
+                margin: 0%;
+                padding: 0%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr ;
+                grid-gap: 2px;
+                justify-items: center;
+                background-color:blanchedalmond;
+               
+                .sandwiches__lista{ 
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 15px 10px 15px 10px;
+                    &:hover{
+                        transform: scale(1.10);
+                        background-color: ghostwhite;
+                    }}
+            }
+            .guarnicion{
+                font-family: 'Quicksand', sans-serif;
+                font-size: medium;
+                text-align: center;
+                padding: 5px 0px 5px 0px;
+                display: grid;
+                grid-template-columns: 0.2fr 0.2fr ;
+                align-items: center;
+                background-color: blanchedalmond;
+                .guarnicion__lista{ 
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 15px 10px 15px 10px;
+                    &:hover{
+                        background-color: ghostwhite;
+                        transform: scale(1.10);
+                    }}
+            }
+            section{
+                .guarnicion__titulo{
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font-size: 150%;
+                    margin: 0%;
+                    padding: 15px;
+                    text-align: center;
+                    background-color: rgb(107, 122, 143);
+                }
+            }
+            .tiposdepago{
+                h2{ 
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font-size: 250%;
+                    margin: 0%;
+                    padding: 25px;
+                    text-align: center;
+                background-color: blanchedalmond;}
+                .metodo{
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 5px 0px 5px 0px;
+                    display: grid;
+                    align-items: center;
+                    justify-content: center;
+                    grid-template-columns: 0.2fr 0.2fr 0.2fr ;
+                    align-items: center;
+                    background-color: blanchedalmond;
+                    div{
+                        .titulometodos{
+                            font-family: 'Quicksand', sans-serif;
+                            font-weight: bold;
+                            font-size: 150%;
+                            margin: 10%;
+                            color: gray;
+                        }
+                        .imgmetodos{
+                            width: 205px;
+                            &:hover{
+                               transform: scale(1.10); 
+                            }
+                        }
+                    }
+                }
+            }
+            .pedidowhatsapp{
+                padding: 25px 2px 25px 2px;
+                background-color: blanchedalmond;
+                font-family: 'Quicksand', sans-serif;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            .historia{
+                background-color: blanchedalmond;
+                text-align: center;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 150%;
+                display: flex; 
+                flex-direction: column;
+                justify-content: flex-start;
+                
+                .historia__titulo{
+                    font-style: inherit;
+                    text-align: center;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 150%;
+                    padding-bottom: 15px;
+                    padding-top: 15px;
+                }
+                .historia__cuadro{
+                    padding:80px 80px 80px 80px;
+                    margin-left: 40px;
+                    margin-right: 40px;
+                    margin-bottom: 100px;
+                    margin-top: 25px;
+                    border-radius: 2%;
+                    background-color: whitesmoke;
+                    .portadahistoria{
+                        width: 850px;
+                        float: left;
+                        margin-right: 2%;
+                    }
+                }
+            }
+            .trabajaconnosotros{
+                background-color: wheat;
+                text-align: center;
+                font-size: 150%;
+                font-family: 'Quicksand', sans-serif;
+                padding:50px 50px 50px 50px;
+                .trabajaconnosotros__titulo{
+                    font-size: 180%;
+                    font-weight: bold;
+                }
+    
+            }
+            .sumate{
+                font-weight: bold;
+                text-align: center;
+                font-size: 150%;
+                font-family: 'Quicksand', sans-serif;
+                background-color: wheat;
+            }
+            
+            .contactoTitulo{
+                background-color: gainsboro;
+                color:rgb(238, 147, 10);
+                font-weight: bold;
+                text-align: center;
+                margin: 0;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            
+             
+        }
+        .contacto{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: 2fr;
+            align-items: center;
+            margin: 0;
+            padding-top: 0;
+            
+    
+            .horario{
+            background-color: blanchedalmond ;
+            text-align: left;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 150%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: 800px;
+            align-items: center;
+            
+            
+            align-items: center;
+            justify-content: center;
+            
+            .imgtelefono{
+                width: 50px;
+                
+            }
+        .horario__titulo{
+            margin-top: 0;
+            margin-bottom: 10%;
+            padding: 0;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 150%;
+    
+        }}
+            .tabla{
+                background-color: blanchedalmond;
+                text-align: right;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 100%;
+                
+               
+            }  
+        }
+        footer{
+            background-color: rgb(54, 54, 54);
+            color:ghostwhite;
+            font-family: 'Quicksand', sans-serif;
+            div{
+                .link{color: white;}
+                .pie{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: left;
+                    justify-content: left;
+                    text-align: left;
+                    font-size: 100%;
+                    line-height: 30px;
+                }
+                .redes-1{
+                padding-top: 0;
+                padding-right: 10px;
+                .link{color: white;}
+                .pie1{
+                    text-align: right;
+                    font-size: 100%;
+                    line-height: 30px;
+                }
+                .redes-2{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: right;
+                    justify-content: right;
+                    
+                    padding-right: 5px;
+                    padding-bottom: 15px;
+                    .link{color: white;}
+                    .redeslogo{
+                            margin-left: 15px;
+                            margin-right: 15px;
+                    }  
+                }
+            }
+            .logo{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                width: 100%;
+                .texto{
+                    margin: 8px;
+                }
+                .logofooter{
+                    width: 200px;
+                }
+                }
+            }
+            
+            
+    
+        }
+    }
+}
+@media only screen and (max-width: 1820px) and (min-width: 1200px)  {
+    body{
+        header{
+            background-color: #383838;
+            display: flex;
+            flex-direction: row; 
+            justify-content: left;   
+        }
+        main{
+            .imghome{ display: flex; 
+                flex-direction: row; 
+                justify-content: center;   
+            }
+            section{
+                .vendido__titulo{
+                    @include titulohome();
+                   
+                }
+            }
+            .vendido{
+                    color: grey;
+                    background: blanchedalmond;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: $fuente/2;                                      
+                    text-align: center;
+                    display: grid;    
+                    grid-template-columns: 4fr 4fr;    
+                    grid-template-rows: auto; 
+                    align-items: center;
+                    justify-items: center;
+                    .box{
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        overflow: hidden;
+                        position: relative;
+                        overflow: hidden;
+                        position: relative;
+                        margin: 1.5%;
+                        object-fit: cover;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        .hover{
+                            width: 0%;
+                            height: 100%;
+                            background-color: rgba(56, 53, 53, 0.568);
+                            position: absolute;
+                            top: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            overflow: hidden;
+                            transition: .4s all;
+                            h4{
+                                font-family: 'Quicksand', sans-serif;
+                                color: aliceblue;
+                                text-shadow: 1 px 1 px 1 px black;
+                                font-size: 1em;
+                                text-transform: uppercase;
+                            }
+    
+                        }
+                        &:hover .hover{
+                            width: 100%;
+                        }   
+                    }
+            }
+            .opiniones__titulo{
+                margin: 0;
+                padding: 15px 35px 15px 35px;
+                text-align: center;
+                background-color: blanchedalmond;
+                font-family: 'Quicksand', sans-serif;
+                color: #383838;
+                font-size: 140%;
+            }
+            .opiniones{
+                background: blanchedalmond;
+                color: rgb(62, 62, 63);
+                font-family: 'Quicksand', sans-serif;
+                text-align: center;
+                display: grid;  	   
+                grid-template-columns: 1.5fr 1.5fr 1.5fr;           
+                grid-template-rows: auto; 
+                align-items: center;
+                justify-items: center;
+                .opiniones__persona{
+                    @include cajaopiniones();
+    
+                    &:hover{
+                        background-color: rgba(85, 80, 65, 0.5);
+                    }
+                    .fotopersona{
+                        margin: auto;
+                        display: flex;
+                        flex-direction: row; 
+                        justify-content: center;
+                    }
+                    .estrella{
+                        margin: auto;
+                        display: flex;
+                        flex-direction: row; 
+                        justify-content: center;
+    
+                    }
+    
+                }
+            }
+            .milanesa__titulo{
+                font-family: 'Quicksand', sans-serif;
+                font-weight: bold;
+                font-size: 150%;
+                margin: 0%;
+                padding-bottom: 1%;
+                padding-top: 1%;
+                text-align: center;
+                background-color: rgb(107, 122, 143);}
+            .milanesa{
+                font-family: 'Quicksand', sans-serif;
+                font-size: medium;
+                text-align: center;
+                padding: 0%;
+                margin: 0%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-gap: 2px;
+                background-color: blanchedalmond;
+                .milanesa__lista{
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 15px 10px 15px 10px;
+                    &:hover{
+                        background-color: ghostwhite;
+                        transform: scale(1.10);
+                    }
+                }
+            }
+            .titulo{ padding: 0%;
+                     margin: 0%;
+                   
+                .sandwiches__titulo{
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font-size: 150%;
+                    margin: 0%;
+                    padding-bottom: $padding/4;                                               
+                    padding-top: 1%;
+                    text-align: center;
+                    background-color: rgb(107, 122, 143);}
+            }
+            .sandwiches{
+                font-family: 'Quicksand', sans-serif;
+                font-size: medium;
+                text-align: center;
+                margin: 0%;
+                padding: 0%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr ;
+                grid-gap: 2px;
+                justify-items: center;
+                background-color:blanchedalmond;
+               
+                .sandwiches__lista{ 
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 15px 10px 15px 10px;
+                    &:hover{
+                        transform: scale(1.10);
+                        background-color: ghostwhite;
+                    }}
+            }
+            .guarnicion{
+                font-family: 'Quicksand', sans-serif;
+                font-size: medium;
+                text-align: center;
+                padding: 5px 0px 5px 0px;
+                display: grid;
+                grid-template-columns: 0.2fr 0.2fr ;
+                align-items: center;
+                background-color: blanchedalmond;
+                .guarnicion__lista{ 
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 15px 10px 15px 10px;
+                    &:hover{
+                        background-color: ghostwhite;
+                        transform: scale(1.10);
+                    }}
+            }
+            section{
+                .guarnicion__titulo{
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font-size: 150%;
+                    margin: 0%;
+                    padding: 15px;
+                    text-align: center;
+                    background-color: rgb(107, 122, 143);
+                }
+            }
+            .tiposdepago{
+                h2{ 
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font-size: 250%;
+                    margin: 0%;
+                    padding: 25px;
+                    text-align: center;
+                background-color: blanchedalmond;}
+                .metodo{
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 5px 0px 5px 0px;
+                    display: grid;
+                    align-items: center;
+                    justify-content: center;
+                    grid-template-columns: 0.2fr 0.2fr 0.2fr ;
+                    align-items: center;
+                    background-color: blanchedalmond;
+                    div{
+                        .titulometodos{
+                            font-family: 'Quicksand', sans-serif;
+                            font-weight: bold;
+                            font-size: 150%;
+                            margin: 10%;
+                            color: gray;
+                        }
+                        .imgmetodos{
+                            width: 205px;
+                            &:hover{
+                               transform: scale(1.10); 
+                            }
+                        }
+                    }
+                }
+            }
+            .pedidowhatsapp{
+                padding: 25px 2px 25px 2px;
+                background-color: blanchedalmond;
+                font-family: 'Quicksand', sans-serif;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            .historia{
+                background-color: blanchedalmond;
+                text-align: center;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 150%;
+                display: flex; 
+                flex-direction: column;
+                justify-content: flex-start;
+                
+                .historia__titulo{
+                    font-style: inherit;
+                    text-align: center;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 150%;
+                    padding-bottom: 15px;
+                    padding-top: 15px;
+                }
+                .historia__cuadro{
+                    padding:80px 80px 80px 80px;
+                    margin-left: 40px;
+                    margin-right: 40px;
+                    margin-bottom: 100px;
+                    margin-top: 25px;
+                    border-radius: 2%;
+                    background-color: whitesmoke;
+                    .portadahistoria{
+                        width: 850px;
+                        float: left;
+                        margin-right: 2%;
+                    }
+                }
+            }
+            .trabajaconnosotros{
+                background-color: wheat;
+                text-align: center;
+                font-size: 150%;
+                font-family: 'Quicksand', sans-serif;
+                padding:50px 50px 50px 50px;
+                .trabajaconnosotros__titulo{
+                    font-size: 180%;
+                    font-weight: bold;
+                }
+    
+            }
+            .sumate{
+                font-weight: bold;
+                text-align: center;
+                font-size: 150%;
+                font-family: 'Quicksand', sans-serif;
+                background-color: wheat;
+            }
+           
+            .contactoTitulo{
+                background-color: gainsboro;
+                color:rgb(238, 147, 10);
+                font-weight: bold;
+                text-align: center;
+                margin: 0;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }      
+        }
+        .contacto{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: 2fr;
+            align-items: center;
+            margin: 0;
+            .horario{
+            background-color:blanchedalmond ;
+            text-align: left;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 150%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;    
+        .horario__titulo{
+            
+            margin: 0;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 150%;
+    
+        }}
+            .tabla{
+                background-color: blanchedalmond;
+                text-align: right;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 100%;
+                
+               
+            }  
+        }
+        footer{
+            background-color: rgb(54, 54, 54);
+            color:ghostwhite;
+            font-family: 'Quicksand', sans-serif;
+            div{
+                .link{color: white;}
+                .pie{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: left;
+                    justify-content: left;
+                    text-align: left;
+                    font-size: 100%;
+                    line-height: 30px;
+                }
+                .redes-1{
+                padding-top: 0;
+                padding-right: 10px;
+                .link{color: white;}
+                .pie1{
+                    text-align: right;
+                    font-size: 100%;
+                    line-height: 30px;
+                }
+                .redes-2{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: right;
+                    justify-content: right;
+                    
+                    padding-right: 5px;
+                    padding-bottom: 15px;
+                    .link{color: white;}
+                    .redeslogo{
+                            margin-left: 15px;
+                            margin-right: 15px;
+                    }  
+                }
+            }
+            .logo{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                width: 100%;
+                .texto{
+                    margin: 8px;
+                }
+                .logofooter{
+                    width: 200px;
+                }
+                }
+            }
+            
+            
+    
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 600px){
+    body{
+        header{
+            background-color: #383838;
+            display: flex;
+            flex-direction: row; 
+            justify-content: left;
+            
+        }
+        main{
+            .imghome{ display: flex; 
+                flex-direction: row; 
+                justify-content: center;
+               
+                
+            }
+            section{
+                .vendido__titulo{
+                    @include titulohome();
+                   
+                }
+            }
+            .vendido{
+                    color: grey;
+                    background: blanchedalmond;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: $fuente/2;                                      
+                    text-align: center;
+                    display: grid;    
+                    grid-template-columns: 370px 370px;    
+                    grid-template-rows: auto; 
+                    align-items: center;
+                    justify-items: center;
+                    .box{
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        overflow: hidden;
+                        position: relative;
+                        overflow: hidden;
+                        position: relative;
+                        margin: 1.5%;
+                        object-fit: cover;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        .hover{
+                            width: 0%;
+                            height: 100%;
+                            background-color: rgba(56, 53, 53, 0.568);
+                            position: absolute;
+                            top: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            overflow: hidden;
+                            transition: .4s all;
+                            h4{
+                                font-family: 'Quicksand', sans-serif;
+                                color: aliceblue;
+                                text-shadow: 1 px 1 px 1 px black;
+                                font-size: 1em;
+                                text-transform: uppercase;
+                            }
+    
+                        }
+                        &:hover .hover{
+                            width: 100%;
+                        }
+                          
+                    }
+            }
+            .opiniones__titulo{
+                margin: 0;
+                padding: 15px 35px 15px 35px;
+                text-align: center;
+                background-color: blanchedalmond;
+                font-family: 'Quicksand', sans-serif;
+                color: #383838;
+                font-size: 140%;
+    
+            }
+            .opiniones{
+                background: blanchedalmond;
+                color: rgb(62, 62, 63);
+                font-family: 'Quicksand', sans-serif;
+                text-align: center;
+                display: grid;  	   
+                grid-template-columns: 370px 370px;           
+                grid-template-rows: auto; 
+                align-items: center;
+                justify-items: center;
+                .opiniones__persona{
+                    @include cajaopiniones();
+    
+                    &:hover{
+                        background-color: rgba(85, 80, 65, 0.5);
+                    }
+                    .fotopersona{
+                        margin: auto;
+                        display: flex;
+                        flex-direction: row; 
+                        justify-content: center;
+                    }
+                    .estrella{
+                        margin: auto;
+                        display: flex;
+                        flex-direction: row; 
+                        justify-content: center;
+    
+                    }
+    
+                }
+            }
+            .milanesa__titulo{
+                font-family: 'Quicksand', sans-serif;
+                font-weight: bold;
+                font-size: 150%;
+                margin: 0%;
+                padding-bottom: 1%;
+                padding-top: 1%;
+                text-align: center;
+                background-color: rgb(107, 122, 143);}
+            .milanesa{
+                font-family: 'Quicksand', sans-serif;
+                font-size: medium;
+                text-align: center;
+                padding: 0%;
+                margin: 0%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 2px;
+                background-color: blanchedalmond;
+                .milanesa__lista{
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 15px 10px 15px 10px;
+                    &:hover{
+                        background-color: ghostwhite;
+                        transform: scale(1.10);
+                    }
+                }
+            }
+            .titulo{ padding: 0%;
+                     margin: 0%;
+                   
+                .sandwiches__titulo{
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font-size: 150%;
+                    margin: 0%;
+                    padding-bottom: $padding/4;                                              
+                    text-align: center;
+                    background-color: rgb(107, 122, 143);}
+            }
+            .sandwiches{
+                font-family: 'Quicksand', sans-serif;
+                font-size: medium;
+                text-align: center;
+                margin: 0%;
+                padding: 0%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 2px;
+                justify-items: center;
+                background-color:blanchedalmond;
+               
+                .sandwiches__lista{ 
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 15px 10px 15px 10px;
+                    &:hover{
+                        transform: scale(1.10);
+                        background-color: ghostwhite;
+                    }}
+            }
+            .guarnicion{
+                font-family: 'Quicksand', sans-serif;
+                font-size: medium;
+                text-align: center;
+                padding: 5px 0px 5px 0px;
+                display: grid;
+                grid-template-columns: 1fr 1fr ;
+                align-items: center;
+                background-color: blanchedalmond;
+                .guarnicion__lista{ 
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 15px 10px 15px 10px;
+                    &:hover{
+                        background-color: ghostwhite;
+                        transform: scale(1.10);
+                    }}
+            }
+            section{
+                .guarnicion__titulo{
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font-size: 150%;
+                    margin: 0%;
+                    padding: 15px;
+                    text-align: center;
+                    background-color: rgb(107, 122, 143);
+                }
+            }
+            .tiposdepago{
+                h2{ 
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font-size: 150%;
+                    border: none;
+                    margin: 0%;
+                    padding: 25px;
+                    text-align: center;
+                background-color: blanchedalmond;}
+                .metodo{
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 5px 0px 5px 0px;
+                    display: grid;
+                    align-items: center;
+                    justify-content: center;
+                    grid-template-columns: 0.2fr 0.2fr 0.2fr ;
+                    
+                    align-items: center;
+                    background-color: blanchedalmond;
+                    div{
+                        .titulometodos{
+                            font-family: 'Quicksand', sans-serif;
+                            font-weight: bold;
+                            font-size: 105%;
+                            margin: 10%;
+                            color: gray;
+                        }
+                        .imgmetodos{
+                            width: 105px;
+                            &:hover{
+                               transform: scale(1.10); 
+                            }
+                        }
+                    }
+                }
+            }
+            .pedidowhatsapp{
+                padding: 25px 2px 25px 2px;
+                background-color: blanchedalmond;
+                font-family: 'Quicksand', sans-serif;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                h2{
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font-size: 105%;
+                    margin: 1%;
+                }
+               
+
+            }
+            .historia{
+                background-color: blanchedalmond;
+                text-align: center;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 100%;
+                display: flex; 
+                flex-direction: column;
+                justify-content: center;
+                
+                .historia__titulo{
+                    font-style: inherit;
+                    text-align: center;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 150%;
+                    padding-bottom: 15px;
+                    padding-top: 15px;
+                }
+                .historia__cuadro{
+                    padding:80px 80px 80px 80px;
+                    margin-left: 40px;
+                    margin-right: 40px;
+                    margin-bottom: 100px;
+                    margin-top: 25px;
+                    border-radius: 2%;
+                    background-color: whitesmoke;
+                    display: block;
+                    .portadahistoria{
+                        width: 100%;
+                        margin: 0;
+                        display: block;    
+                    }
+                    .textohistoria{
+                        text-align: center;
+                        display: block;
+                    }
+                }
+            }
+            .trabajaconnosotros{
+                background-color: wheat;
+                text-align: center;
+                font-size: 150%;
+                font-family: 'Quicksand', sans-serif;
+                padding:50px 50px 50px 50px;
+                .trabajaconnosotros__titulo{
+                    font-size: 180%;
+                    font-weight: bold;
+                }
+    
+            }
+            .sumate{
+                font-weight: bold;
+                text-align: center;
+                font-size: 150%;
+                font-family: 'Quicksand', sans-serif;
+                background-color: wheat;
+            }
+            
+            .contactoTitulo{
+                background-color: gainsboro;
+                color:rgb(238, 147, 10);
+                font-weight: bold;
+                text-align: center;
+                margin: 0;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }   
+        }
+        .contacto{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: 1fr ;
+            align-items: center;
+            margin: 0;
+            
+            .mensaje{
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: 200px;
+                margin: 0;}
+            
+    
+            .horario{
+            background-color:blanchedalmond;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 150%;
+            text-align: center;
+            margin-top: 0;
+           width: 100%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: 1fr;
+        .horario__titulo{
+            margin: 0;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 150%;
+    
+        }
+        .tabla{
+            background-color: blanchedalmond;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 180%;
+            width: 100%;  
+        } }
+             
+        }
+        footer{
+            background-color: rgb(54, 54, 54);
+            color:ghostwhite;
+            font-family: 'Quicksand', sans-serif;
+            div{
+                .link{color: white;}
+                .pie{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: left;
+                    justify-content: left;
+                    text-align: left;
+                    font-size: 100%;
+                    line-height: 30px;
+                }
+                .redes-1{
+                padding-top: 0;
+                padding-right: 10px;
+                .link{color: white;}
+                .pie1{
+                    text-align: right;
+                    font-size: 100%;
+                    line-height: 30px;
+                }
+                .redes-2{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: right;
+                    justify-content: right;
+                    
+                    padding-right: 5px;
+                    padding-bottom: 15px;
+                    .link{color: white;}
+                    .redeslogo{
+                            margin-left: 15px;
+                            margin-right: 15px;
+                    }  
+                }
+            }
+            .logo{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                width: 100%;
+                .texto{
+                    margin: 8px;
+                }
+                .logofooter{
+                    width: 200px;
+                }
+                }
+            }
+            
+            
+    
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 320px){
+    body{
+        header{
+            background-color: #383838;
+            display: flex;
+            flex-direction: row; 
+            justify-content: left;
+            
+        }
+        main{
+            .imghome{ display: flex; 
+                flex-direction: row; 
+                justify-content: center;
+               
+                
+            }
+            section{
+                .vendido__titulo{
+                    margin: 0%;
+                    padding: 15px 35px 15px 35px;
+                    text-align: center;
+                    background-color:blanchedalmond;
+                    font-family: 'Roboto', sans-serif;
+                    color: #383838;
+                    font-size: 120%;
+                   
+                }
+            }
+            .vendido{
+                    color: grey;
+                    background: blanchedalmond;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 100%;                                       
+                    text-align: center;
+                    display: grid;    
+                    grid-template-columns: 170px 170px;    
+                    grid-template-rows: auto; 
+                    align-items: center;
+                    justify-items: center;
+                    .box{
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        overflow: hidden;
+                        position: relative;
+                        overflow: hidden;
+                        position: relative;
+                        margin: 1.5%;
+                        object-fit: cover;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        .hover{
+                            width: 0%;
+                            height: 100%;
+                            background-color: rgba(56, 53, 53, 0.568);
+                            position: absolute;
+                            top: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            overflow: hidden;
+                            transition: .4s all;
+                            h4{
+                                font-family: 'Quicksand', sans-serif;
+                                color: aliceblue;
+                                text-shadow: 1 px 1 px 1 px black;
+                                font-size: 1em;
+                                text-transform: uppercase;
+                            }
+    
+                        }
+                        &:hover .hover{
+                            width: 100%;
+                        }
+                          
+                    }
+                  .boton{
+                      font-size: 50%;
+                  }  
+                    
+                    
+    
+            }
+            .opiniones__titulo{
+                margin: 0;
+                padding: 15px 35px 15px 35px;
+                text-align: center;
+                background-color: blanchedalmond;
+                font-family: 'Quicksand', sans-serif;
+                color: #383838;
+                font-size: 120%;
+    
+            }
+            .opiniones{
+                background: blanchedalmond;
+                color: rgb(62, 62, 63);
+                font-family: 'Quicksand', sans-serif;
+                text-align: center;
+                display: grid;  	   
+                grid-template-columns: 360px;           
+                grid-template-rows: auto;
+                
+                align-items: center;
+                justify-items: center;
+                padding-bottom: 20%;
+                .comentarios{
+                    font-size: 100%;
+                }
+                .opiniones__persona{
+                    padding: 10px 10px 10px 10px;
+                    margin:5;
+                    border: 2px ;
+                    background-color: rgba(230, 230, 230, 0.925);
+                    display: block;
+    
+                    &:hover{
+                        background-color: rgba(85, 80, 65, 0.5);
+                    }
+                    .fotopersona{
+                        width: 50px;
+                        margin: auto;
+                        display: flex;
+                        flex-direction: row; 
+                        justify-content: center;
+                    }
+                    .estrella{
+                        margin: auto;
+                        display: flex;
+                        flex-direction: row; 
+                        justify-content: center;
+    
+                    }
+    
+                }
+            }
+            .milanesa__titulo{
+                font-family: 'Quicksand', sans-serif;
+                font-weight: bold;
+                font-size: 120%;
+                margin: 0%;
+                padding-bottom: 1%;
+                padding-top: 1%;
+                text-align: center;
+                background-color: rgb(107, 122, 143);}
+            .milanesa{
+                font-family: 'Quicksand', sans-serif;
+                font-size: 70%;
+                font-size: medium;
+                text-align: center;
+                padding: 0%;
+                margin: 0%;
+                display: grid;
+                grid-template-columns: 4fr ;
+                grid-gap: 2px;
+                background-color: blanchedalmond;
+                .milanesa__lista{
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 15px 10px 15px 10px;
+                    &:hover{
+                        background-color: ghostwhite;
+                        transform: scale(1.10);
+                    }
+                }
+            }
+            .titulo{ padding: 0%;
+                     margin: 0%;
+                   
+                .sandwiches__titulo{
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font-size: 120%;
+                    margin: 0%;
+                    padding-bottom: $padding/4;                                               /*operaciones*/
+                    padding-top: 1%;
+                    text-align: center;
+                    background-color: rgb(107, 122, 143);}
+            }
+            .sandwiches{
+                font-family: 'Quicksand', sans-serif;
+                font-size: medium;
+                text-align: center;
+                margin: 0%;
+                padding: 0%;
+                display: grid;
+                grid-template-columns: 4fr;
+                grid-gap: 2px;
+                justify-items: center;
+                background-color:blanchedalmond;
+               
+                .sandwiches__lista{ 
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 15px 10px 15px 10px;
+                    &:hover{
+                        transform: scale(1.10);
+                        background-color: ghostwhite;
+                    }}
+            }
+            .guarnicion{
+                font-family: 'Quicksand', sans-serif;
+                font-size: medium;
+                text-align: center;
+                padding: 5px 0px 5px 0px;
+                display: grid;
+                grid-template-columns: 4fr;
+                align-items: center;
+                background-color: blanchedalmond;
+                .guarnicion__lista{ 
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 15px 10px 15px 10px;
+                    &:hover{
+                        background-color: ghostwhite;
+                        transform: scale(1.10);
+                    }}
+            }
+            section{
+                .guarnicion__titulo{
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font-size: 120%;
+                    margin: 0%;
+                    padding: 15px;
+                    text-align: center;
+                    background-color: rgb(107, 122, 143);
+                }
+            }
+            .tiposdepago{
+                h2{ 
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font-size: 150%;
+                    border: none;
+                    margin: 0%;
+                    padding: 25px;
+                    text-align: center;
+                background-color: blanchedalmond;}
+                .metodo{
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 5px 0px 5px 0px;
+                    display: grid;
+                    align-items: center;
+                    justify-content: center;
+                    grid-template-columns: 4fr;
+                    
+                    align-items: center;
+                    background-color: blanchedalmond;
+                    div{
+                        .titulometodos{
+                            font-family: 'Quicksand', sans-serif;
+                            font-weight: bold;
+                            font-size: 95%;
+                            margin: 10%;
+                            color: gray;
+                        }
+                        .imgmetodos{
+                            width: 105px;
+                            &:hover{
+                               transform: scale(1.10); 
+                            }
+                        }
+                    }
+                }
+            }
+            .pedidowhatsapp{
+                padding: 25px 2px 25px 2px;
+                background-color: blanchedalmond;
+                font-family: 'Quicksand', sans-serif;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                h2{
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font-size: 95%;
+                    margin: 1%;
+                }
+               
+
+            }
+            .historia{
+                background-color: blanchedalmond;
+                text-align: center;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 100%;
+                display: flex; 
+                flex-direction: column;
+                justify-content: center;
+                
+                .historia__titulo{
+                    font-style: inherit;
+                    text-align: center;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 150%;
+                    padding-bottom: 15px;
+                    padding-top: 15px;
+                }
+                .historia__cuadro{
+                    padding:50px 20px 50px 20px;
+                    margin-left: 40px;
+                    margin-right: 40px;
+                    margin-bottom: 100px;
+                    margin-top: 25px;
+                    border-radius: 2%;
+                    background-color: whitesmoke;
+                    display: block;
+                    .portadahistoria{
+                        width: 100%;
+                        margin: 0;
+                        display: block;
+                        
+                        
+                    }
+                    .textohistoria{
+                        font-size: 70%;
+                        text-align: center;
+                        display: block;
+                    }
+                }
+            }
+            .trabajaconnosotros{
+                background-color: wheat;
+                text-align: center;
+                font-size: 70%;
+                font-family: 'Quicksand', sans-serif;
+                padding:50px 50px 50px 50px;
+                .trabajaconnosotros__titulo{
+                    font-size: 180%;
+                    font-weight: bold;
+                }
+    
+            }
+            .sumate{
+                font-weight: bold;
+                text-align: center;
+                font-size: 95%;
+                font-family: 'Quicksand', sans-serif;
+                background-color: wheat;
+                .flecha{
+                    width: 10px;
+                }
+            }
+            
+            .contactoTitulo{
+                background-color: gainsboro;
+                color:rgb(238, 147, 10);
+                font-weight: bold;
+                text-align: center;
+                font-size: 120%;
+                margin: 0;
+                
+            }
+            
+             
+        }
+        .contacto{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: 1fr ;
+            
+            align-items: center;
+            margin: 0;
+            .mensaje{
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: 200px;
+                margin: 0;
+                
+                
+            }
+            
+    
+            .horario{
+                background-color:blanchedalmond;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 150%;
+                text-align: center;
+                margin-top: 0;
+               width: 100%;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: 1fr;
+            .descripcionhorario{
+                text-align: center;
+                margin: 0;
+                font-size: 70%;;
+            }
+            
+           
+            
+            
+            
+        .horario__titulo{
+            margin: 0;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 100%;
+    
+        }
+        .tabla{
+            background-color: blanchedalmond;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 180%;
+            width: 100%;
+            
+            
+            
+           
+        } }
+             
+        }
+        footer{
+            background-color: rgb(54, 54, 54);
+            color:ghostwhite;
+            font-family: 'Quicksand', sans-serif;
+            div{
+                .link{color: white;}
+                .pie{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: left;
+                    justify-content: left;
+                    text-align: left;
+                    font-size: 70%;
+                    line-height: 30px;
+                }
+                .redes-1{
+                padding-top: 0;
+                padding-right: 10px;
+                .link{color: white;}
+                .pie1{
+                    text-align: right;
+                    font-size: 70%;
+                    line-height: 30px;
+                }
+                .redes-2{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: right;
+                    justify-content: right;
+                    
+                    padding-right: 5px;
+                    padding-bottom: 15px;
+                    .link{color: white;}
+                    .redeslogo{
+                            margin-left: 15px;
+                            margin-right: 15px;
+                            width: 25px;
+                            height: 25px;
+                    }  
+                }
+            }
+            .logo{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                width: 100%;
+                .texto{
+                    margin: 8px;
+                    font-size: 70%;
+                }
+                .logofooter{
+                    width: 200px;
+                }
+                }
+            }
+            
+            
+    
+        }
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 320px){
+    body{
+        header{
+            background-color: #383838;
+            display: flex;
+            flex-direction: row; 
+            justify-content: left;
+            
+        }
+        main{
+            .imghome{ display: flex; 
+                flex-direction: row; 
+                justify-content: center;
+               
+                
+            }
+            section{
+                .vendido__titulo{
+                    margin: 0%;
+    padding: 15px 35px 15px 35px;
+    text-align: center;
+    background-color:blanchedalmond;
+    font-family: 'Roboto', sans-serif;
+    color: #383838;
+    font-size: 120%;
+                   
+                }
+            }
+            .vendido{
+                    color: grey;
+                    background: blanchedalmond;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 100%;                                       /*operaciones*/
+                    text-align: center;
+                    display: grid;    
+                    grid-template-columns: 1.5fr 1.5fr;    
+                    grid-template-rows: auto;
+                    align-items: center;
+                    justify-items: center;
+                    .box{
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        overflow: hidden;
+                        position: relative;
+                        overflow: hidden;
+                        position: relative;
+                        margin: 1.5%;
+                        object-fit: cover;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        .hover{
+                            width: 0%;
+                            height: 100%;
+                            background-color: rgba(56, 53, 53, 0.568);
+                            position: absolute;
+                            top: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            overflow: hidden;
+                            transition: .4s all;
+                            h4{
+                                font-family: 'Quicksand', sans-serif;
+                                color: aliceblue;
+                                text-shadow: 1 px 1 px 1 px black;
+                                font-size: 1em;
+                                text-transform: uppercase;
+                            }
+    
+                        }
+                        &:hover .hover{
+                            width: 100%;
+                        }
+                          
+                    }
+                  .boton{
+                      font-size: 50%;
+                  }  
+                    
+                    
+    
+            }
+            .opiniones__titulo{
+                margin: 0;
+                padding: 15px 35px 15px 35px;
+                text-align: center;
+                background-color: blanchedalmond;
+                font-family: 'Quicksand', sans-serif;
+                color: #383838;
+                font-size: 120%;
+    
+            }
+            .opiniones{
+                background: blanchedalmond;
+                color: rgb(62, 62, 63);
+                font-family: 'Quicksand', sans-serif;
+                text-align: center;
+                display: grid;  	   
+                grid-template-columns: 320px;           
+                grid-template-rows: auto;
+                
+                align-items: center;
+                justify-items: center;
+                padding-bottom: 20%;
+                .comentarios{
+                    font-size: 100%;
+                }
+                .opiniones__persona{
+                    padding: 10px 10px 10px 10px;
+                    margin:5;
+                    border: 2px ;
+                    background-color: rgba(230, 230, 230, 0.925);
+                    display: block;
+    
+                    &:hover{
+                        background-color: rgba(85, 80, 65, 0.5);
+                    }
+                    .fotopersona{
+                        width: 50px;
+                        margin: auto;
+                        display: flex;
+                        flex-direction: row; 
+                        justify-content: center;
+                    }
+                    .estrella{
+                        margin: auto;
+                        display: flex;
+                        flex-direction: row; 
+                        justify-content: center;
+    
+                    }
+    
+                }
+            }
+            .milanesa__titulo{
+                font-family: 'Quicksand', sans-serif;
+                font-weight: bold;
+                font-size: 120%;
+                margin: 0%;
+                padding-bottom: 1%;
+                padding-top: 1%;
+                text-align: center;
+                background-color: rgb(107, 122, 143);}
+            .milanesa{
+                font-family: 'Quicksand', sans-serif;
+                font-size: 70%;
+                font-size: medium;
+                text-align: center;
+                padding: 0%;
+                margin: 0%;
+                display: grid;
+                grid-template-columns: 1.5fr ;
+                grid-gap: 2px;
+                background-color: blanchedalmond;
+                .milanesa__lista{
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 15px 10px 15px 10px;
+                    .imgmenu{
+                        width: 250px;
+                    }
+                    &:hover{
+                        background-color: ghostwhite;
+                        transform: scale(1.10);
+                    }
+                }
+            }
+            .titulo{ padding: 0%;
+                     margin: 0%;
+                   
+                .sandwiches__titulo{
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font-size: 120%;
+                    margin: 0%;
+                    padding-bottom: $padding/4;                                              
+                    padding-top: 1%;
+                    text-align: center;
+                    background-color: rgb(107, 122, 143);}
+            }
+            .sandwiches{
+                font-family: 'Quicksand', sans-serif;
+                font-size: medium;
+                text-align: center;
+                margin: 0%;
+                padding: 0%;
+                display: grid;
+                grid-template-columns: 1.5fr;
+                grid-gap: 2px;
+                justify-items: center;
+                background-color:blanchedalmond;
+               
+                .sandwiches__lista{ 
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 15px 10px 15px 10px;
+                    .imgmenu{
+                        width: 250px;
+                    }
+                    &:hover{
+                        transform: scale(1.10);
+                        background-color: ghostwhite;
+                    }}
+            }
+            .guarnicion{
+                font-family: 'Quicksand', sans-serif;
+                font-size: medium;
+                text-align: center;
+                padding: 5px 0px 5px 0px;
+                display: grid;
+                grid-template-columns: 1.5fr;
+                align-items: center;
+                background-color: blanchedalmond;
+                .guarnicion__lista{ 
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 15px 10px 15px 10px;
+                    .imgmenu{
+                        width: 250px;
+                    }
+                    &:hover{
+                        background-color: ghostwhite;
+                        transform: scale(1.10);
+                    }}
+            }
+            section{
+                .guarnicion__titulo{
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font-size: 120%;
+                    margin: 0%;
+                    padding: 15px;
+                    text-align: center;
+                    background-color: rgb(107, 122, 143);
+                }
+            }
+            .tiposdepago{
+                h2{ 
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font-size: 150%;
+                    border: none;
+                    margin: 0%;
+                    padding: 25px;
+                    text-align: center;
+                background-color: blanchedalmond;}
+                .metodo{
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    padding: 5px 0px 5px 0px;
+                    display: grid;
+                    align-items: center;
+                    justify-content: center;
+                    grid-template-columns: 1.5fr;
+                    
+                    align-items: center;
+                    background-color: blanchedalmond;
+                    div{
+                        .titulometodos{
+                            font-family: 'Quicksand', sans-serif;
+                            font-weight: bold;
+                            font-size: 95%;
+                            margin: 10%;
+                            color: gray;
+                        }
+                        .imgmetodos{
+                            width: 105px;
+                            &:hover{
+                               transform: scale(1.10); 
+                            }
+                        }
+                    }
+                }
+            }
+            .pedidowhatsapp{
+                padding: 25px 2px 25px 2px;
+                background-color: blanchedalmond;
+                font-family: 'Quicksand', sans-serif;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                h2{
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: bold;
+                    font-size: 95%;
+                    margin: 1%;
+                }
+               
+
+            }
+            .historia{
+                background-color: blanchedalmond;
+                text-align: center;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 100%;
+                display: flex; 
+                flex-direction: column;
+                justify-content: center;
+                
+                .historia__titulo{
+                    font-style: inherit;
+                    text-align: center;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 150%;
+                    padding-bottom: 15px;
+                    padding-top: 15px;
+                }
+                .historia__cuadro{
+                    padding:50px 20px 50px 20px;
+                    margin-left: 40px;
+                    margin-right: 40px;
+                    margin-bottom: 100px;
+                    margin-top: 25px;
+                    border-radius: 2%;
+                    background-color: whitesmoke;
+                    display: block;
+                    .portadahistoria{
+                        width: 100%;
+                        margin: 0;
+                        display: block;
+                        
+                        
+                    }
+                    .textohistoria{
+                        font-size: 70%;
+                        text-align: center;
+                        display: block;
+                    }
+                }
+            }
+            .trabajaconnosotros{
+                background-color: wheat;
+                text-align: center;
+                font-size: 70%;
+                font-family: 'Quicksand', sans-serif;
+                padding:50px 50px 50px 50px;
+                .trabajaconnosotros__titulo{
+                    font-size: 180%;
+                    font-weight: bold;
+                }
+    
+            }
+            .sumate{
+                font-weight: bold;
+                text-align: center;
+                font-size: 95%;
+                font-family: 'Quicksand', sans-serif;
+                background-color: wheat;
+                .flecha{
+                    width: 10px;
+                }
+            }
+            
+            .contactoTitulo{
+                background-color: gainsboro;
+                color:rgb(238, 147, 10);
+                font-weight: bold;
+                text-align: center;
+                font-size: 120%;
+                margin: 0;
+                
+            }
+            
+             
+        }
+        .contacto{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: 1.5fr ;
+            
+            align-items: center;
+            margin: auto;
+            padding: auto;
+            .mensaje{
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: 220px;
+                margin: 0;
+                
+                
+                
+            }
+            
+    
+            .horario{
+                background-color:blanchedalmond;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 150%;
+                text-align: center;
+                margin-top: 0;
+               width: 100%;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: 1.5fr;
+            .descripcionhorario{
+                text-align: center;
+                margin: 0;
+                font-size: 50%;
+            }
+            
+           
+            
+            
+           
+        .horario__titulo{
+            margin: 0;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 70%;
+    
+        }
+        .tabla{
+            width: 100%;
+            background-color: blanchedalmond;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: 0.2fr;
+            margin: 0;
+            padding: 0;
+            
+            
+            
+            
+           
+        } }
+             
+        }
+        footer{
+            background-color: rgb(54, 54, 54);
+            color:ghostwhite;
+            font-family: 'Quicksand', sans-serif;
+            div{
+                .link{color: white;}
+                .pie{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: left;
+                    justify-content: left;
+                    text-align: left;
+                    font-size: 70%;
+                    line-height: 30px;
+                }
+                .redes-1{
+                padding-top: 0;
+                padding-right: 10px;
+                .link{color: white;}
+                .pie1{
+                    text-align: right;
+                    font-size: 70%;
+                    line-height: 30px;
+                }
+                .redes-2{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: right;
+                    justify-content: right;
+                    
+                    padding-right: 5px;
+                    padding-bottom: 15px;
+                    .link{color: white;}
+                    .redeslogo{
+                            margin-left: 15px;
+                            margin-right: 15px;
+                            width: 25px;
+                            height: 25px;
+                    }  
+                }
+            }
+            .logo{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                width: 100%;
+                .texto{
+                    margin: 8px;
+                    font-size: 70%;
+                }
+                .logofooter{
+                    width: 200px;
+                }
+                }
+            }
+            
+            
+    
+        }
+    }
+
+}
+

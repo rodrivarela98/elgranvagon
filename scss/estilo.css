@@ -1,0 +1,3309 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.redes-1 {
+  padding-right: 10px;
+}
+
+.redes-2 {
+  padding-right: 10px;
+}
+
+body header {
+  background-color: #383838;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+body main .imghome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main section .vendido__titulo {
+  margin: 0%;
+  padding: 15px 35px 15px 35px;
+  text-align: center;
+  background-color: blanchedalmond;
+  font-family: 'Roboto', sans-serif;
+  color: #383838;
+  font-size: 190%;
+}
+
+body main .vendido {
+  color: grey;
+  background: blanchedalmond;
+  font-family: "Quicksand", sans-serif;
+  font-size: 100%;
+  /*operaciones*/
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 460px 460px 460px 460px;
+      grid-template-columns: 460px 460px 460px 460px;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+body main .vendido .box {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body main .vendido .box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body main .vendido .box .hover {
+  width: 0%;
+  height: 100%;
+  background-color: rgba(56, 53, 53, 0.568);
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+}
+
+body main .vendido .box .hover h4 {
+  font-family: "Quicksand", sans-serif;
+  color: aliceblue;
+  text-shadow: 1 px 1 px 1 px black;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+body main .vendido .box:hover .hover {
+  width: 100%;
+}
+
+body main .opiniones__titulo {
+  margin: 0;
+  padding: 15px 35px 15px 35px;
+  text-align: center;
+  background-color: blanchedalmond;
+  font-family: "Quicksand", sans-serif;
+  color: #383838;
+  font-size: 140%;
+}
+
+body main .opiniones {
+  background: blanchedalmond;
+  color: #3e3e3f;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 460px 460px 460px 460px;
+      grid-template-columns: 460px 460px 460px 460px;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+body main .opiniones .opiniones__persona {
+  padding: 20px 20px 30px 30px;
+  margin: 40px 40px 40px 40px;
+  border: 2px;
+  background-color: rgba(230, 230, 230, 0.925);
+  display: inline-block;
+}
+
+body main .opiniones .opiniones__persona:hover {
+  background-color: rgba(85, 80, 65, 0.5);
+}
+
+body main .opiniones .opiniones__persona .fotopersona {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .opiniones .opiniones__persona .estrella {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .milanesa__titulo {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+  margin: 0%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  text-align: center;
+  background-color: #6b7a8f;
+}
+
+body main .milanesa {
+  font-family: 'Quicksand', sans-serif;
+  font-size: medium;
+  text-align: center;
+  padding: 0%;
+  margin: 0%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2px;
+  background-color: blanchedalmond;
+}
+
+body main .milanesa .milanesa__lista {
+  font-family: 'Quicksand', sans-serif;
+  font-size: medium;
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+}
+
+body main .milanesa .milanesa__lista:hover {
+  background-color: ghostwhite;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body main .titulo {
+  padding: 0%;
+  margin: 0%;
+}
+
+body main .titulo .sandwiches__titulo {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+  margin: 0%;
+  padding-bottom: 1%;
+  /*operaciones*/
+  padding-top: 1%;
+  text-align: center;
+  background-color: #6b7a8f;
+}
+
+body main .sandwiches {
+  font-family: 'Quicksand', sans-serif;
+  font-size: medium;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2px;
+  justify-items: center;
+  background-color: blanchedalmond;
+}
+
+body main .sandwiches .sandwiches__lista {
+  font-family: 'Quicksand', sans-serif;
+  font-size: medium;
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+}
+
+body main .sandwiches .sandwiches__lista:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: ghostwhite;
+}
+
+body main .guarnicion {
+  font-family: 'Quicksand', sans-serif;
+  font-size: medium;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.2fr 0.2fr;
+      grid-template-columns: 0.2fr 0.2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: blanchedalmond;
+}
+
+body main .guarnicion .guarnicion__lista {
+  font-family: 'Quicksand', sans-serif;
+  font-size: medium;
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+}
+
+body main .guarnicion .guarnicion__lista:hover {
+  background-color: ghostwhite;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body main section .guarnicion__titulo {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+  margin: 0%;
+  padding: 15px;
+  text-align: center;
+  background-color: #6b7a8f;
+}
+
+body main .tiposdepago h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 250%;
+  margin: 0%;
+  padding: 25px;
+  text-align: center;
+  background-color: blanchedalmond;
+}
+
+body main .tiposdepago .metodo {
+  font-family: 'Quicksand', sans-serif;
+  font-size: medium;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 0.2fr 0.2fr 0.2fr;
+      grid-template-columns: 0.2fr 0.2fr 0.2fr;
+  align-items: center;
+  background-color: blanchedalmond;
+}
+
+body main .tiposdepago .metodo div .titulometodos {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+  margin: 10%;
+  color: gray;
+}
+
+body main .tiposdepago .metodo div .imgmetodos {
+  width: 205px;
+}
+
+body main .tiposdepago .metodo div .imgmetodos:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body main .pedidowhatsapp {
+  padding: 25px 2px 25px 2px;
+  background-color: blanchedalmond;
+  font-family: 'Quicksand', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+body main .historia {
+  background-color: blanchedalmond;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 150%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body main .historia .historia__titulo {
+  font-style: inherit;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 150%;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+body main .historia .historia__cuadro {
+  padding: 80px 80px 80px 80px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 100px;
+  margin-top: 25px;
+  border-radius: 2%;
+  background-color: whitesmoke;
+}
+
+body main .historia .historia__cuadro .portadahistoria {
+  width: 850px;
+  float: left;
+  margin-right: 2%;
+}
+
+body main .trabajaconnosotros {
+  background-color: wheat;
+  text-align: center;
+  font-size: 150%;
+  font-family: 'Quicksand', sans-serif;
+  padding: 50px 50px 50px 50px;
+}
+
+body main .trabajaconnosotros .trabajaconnosotros__titulo {
+  font-size: 180%;
+  font-weight: bold;
+}
+
+body main .sumate {
+  font-weight: bold;
+  text-align: center;
+  font-size: 150%;
+  font-family: 'Quicksand', sans-serif;
+  background-color: wheat;
+}
+
+body main .contactoTitulo {
+  background-color: gainsboro;
+  color: #ee930a;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+body .contacto {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 2fr;
+      grid-template-columns: 2fr;
+  align-items: center;
+  margin: 0;
+}
+
+body .contacto .horario {
+  background-color: blanchedalmond;
+  text-align: left;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 150%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 800px;
+      grid-template-columns: 800px;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+body .contacto .horario .imgtelefono {
+  width: 50px;
+}
+
+body .contacto .horario .horario__titulo {
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 150%;
+}
+
+body .contacto .tabla {
+  background-color: blanchedalmond;
+  text-align: right;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 100%;
+}
+
+body footer {
+  background-color: #363636;
+  color: ghostwhite;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body footer div .link {
+  color: white;
+}
+
+body footer div .pie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  text-align: left;
+  font-size: 100%;
+  line-height: 30px;
+}
+
+body footer div .redes-1 {
+  padding-top: 0;
+  padding-right: 10px;
+}
+
+body footer div .redes-1 .link {
+  color: white;
+}
+
+body footer div .redes-1 .pie1 {
+  text-align: right;
+  font-size: 100%;
+  line-height: 30px;
+}
+
+body footer div .redes-1 .redes-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  padding-right: 5px;
+  padding-bottom: 15px;
+}
+
+body footer div .redes-1 .redes-2 .link {
+  color: white;
+}
+
+body footer div .redes-1 .redes-2 .redeslogo {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+body footer div .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+body footer div .logo .texto {
+  margin: 8px;
+}
+
+body footer div .logo .logofooter {
+  width: 200px;
+}
+
+@media only screen and (min-width: 1820px) {
+  body header {
+    background-color: #383838;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  body main .imghome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main section .vendido__titulo {
+    margin: 0%;
+    padding: 15px 35px 15px 35px;
+    text-align: center;
+    background-color: blanchedalmond;
+    font-family: 'Roboto', sans-serif;
+    color: #383838;
+    font-size: 190%;
+  }
+  body main .vendido {
+    color: grey;
+    background: blanchedalmond;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    /*operaciones*/
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 460px 460px 460px 460px;
+        grid-template-columns: 460px 460px 460px 460px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  body main .vendido .box {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .vendido .box img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .vendido .box .hover {
+    width: 0%;
+    height: 100%;
+    background-color: rgba(56, 53, 53, 0.568);
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    -webkit-transition: .4s all;
+    transition: .4s all;
+  }
+  body main .vendido .box .hover h4 {
+    font-family: 'Quicksand', sans-serif;
+    color: aliceblue;
+    text-shadow: 1 px 1 px 1 px black;
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+  body main .vendido .box:hover .hover {
+    width: 100%;
+  }
+  body main .opiniones__titulo {
+    margin: 0;
+    padding: 15px 35px 15px 35px;
+    text-align: center;
+    background-color: blanchedalmond;
+    font-family: 'Quicksand', sans-serif;
+    color: #383838;
+    font-size: 140%;
+  }
+  body main .opiniones {
+    background: blanchedalmond;
+    color: #3e3e3f;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 460px 460px 460px 460px;
+        grid-template-columns: 460px 460px 460px 460px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  body main .opiniones .opiniones__persona {
+    padding: 20px 20px 30px 30px;
+    margin: 40px 40px 40px 40px;
+    border: 2px;
+    background-color: rgba(230, 230, 230, 0.925);
+    display: inline-block;
+  }
+  body main .opiniones .opiniones__persona:hover {
+    background-color: rgba(85, 80, 65, 0.5);
+  }
+  body main .opiniones .opiniones__persona .fotopersona {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .opiniones .opiniones__persona .estrella {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .milanesa__titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    margin: 0%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    text-align: center;
+    background-color: #6b7a8f;
+  }
+  body main .milanesa {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+    background-color: blanchedalmond;
+  }
+  body main .milanesa .milanesa__lista {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+  }
+  body main .milanesa .milanesa__lista:hover {
+    background-color: ghostwhite;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  body main .titulo {
+    padding: 0%;
+    margin: 0%;
+  }
+  body main .titulo .sandwiches__titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    margin: 0%;
+    padding-bottom: 1%;
+    /*operaciones*/
+    padding-top: 1%;
+    text-align: center;
+    background-color: #6b7a8f;
+  }
+  body main .sandwiches {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+    justify-items: center;
+    background-color: blanchedalmond;
+  }
+  body main .sandwiches .sandwiches__lista {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+  }
+  body main .sandwiches .sandwiches__lista:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    background-color: ghostwhite;
+  }
+  body main .guarnicion {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.2fr 0.2fr;
+        grid-template-columns: 0.2fr 0.2fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: blanchedalmond;
+  }
+  body main .guarnicion .guarnicion__lista {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+  }
+  body main .guarnicion .guarnicion__lista:hover {
+    background-color: ghostwhite;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  body main section .guarnicion__titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    margin: 0%;
+    padding: 15px;
+    text-align: center;
+    background-color: #6b7a8f;
+  }
+  body main .tiposdepago h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 250%;
+    margin: 0%;
+    padding: 25px;
+    text-align: center;
+    background-color: blanchedalmond;
+  }
+  body main .tiposdepago .metodo {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 0.2fr 0.2fr 0.2fr;
+        grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    align-items: center;
+    background-color: blanchedalmond;
+  }
+  body main .tiposdepago .metodo div .titulometodos {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    margin: 10%;
+    color: gray;
+  }
+  body main .tiposdepago .metodo div .imgmetodos {
+    width: 205px;
+  }
+  body main .tiposdepago .metodo div .imgmetodos:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  body main .pedidowhatsapp {
+    padding: 25px 2px 25px 2px;
+    background-color: blanchedalmond;
+    font-family: 'Quicksand', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  body main .historia {
+    background-color: blanchedalmond;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  body main .historia .historia__titulo {
+    font-style: inherit;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  body main .historia .historia__cuadro {
+    padding: 80px 80px 80px 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 100px;
+    margin-top: 25px;
+    border-radius: 2%;
+    background-color: whitesmoke;
+  }
+  body main .historia .historia__cuadro .portadahistoria {
+    width: 850px;
+    float: left;
+    margin-right: 2%;
+  }
+  body main .trabajaconnosotros {
+    background-color: wheat;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Quicksand', sans-serif;
+    padding: 50px 50px 50px 50px;
+  }
+  body main .trabajaconnosotros .trabajaconnosotros__titulo {
+    font-size: 180%;
+    font-weight: bold;
+  }
+  body main .sumate {
+    font-weight: bold;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: wheat;
+  }
+  body main .contactoTitulo {
+    background-color: gainsboro;
+    color: #ee930a;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  body .contacto {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+    align-items: center;
+    margin: 0;
+    padding-top: 0;
+  }
+  body .contacto .horario {
+    background-color: blanchedalmond;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 800px;
+        grid-template-columns: 800px;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+  body .contacto .horario .imgtelefono {
+    width: 50px;
+  }
+  body .contacto .horario .horario__titulo {
+    margin-top: 0;
+    margin-bottom: 10%;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+  }
+  body .contacto .tabla {
+    background-color: blanchedalmond;
+    text-align: right;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+  }
+  body footer {
+    background-color: #363636;
+    color: ghostwhite;
+    font-family: 'Quicksand', sans-serif;
+  }
+  body footer div .link {
+    color: white;
+  }
+  body footer div .pie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    text-align: left;
+    font-size: 100%;
+    line-height: 30px;
+  }
+  body footer div .redes-1 {
+    padding-top: 0;
+    padding-right: 10px;
+  }
+  body footer div .redes-1 .link {
+    color: white;
+  }
+  body footer div .redes-1 .pie1 {
+    text-align: right;
+    font-size: 100%;
+    line-height: 30px;
+  }
+  body footer div .redes-1 .redes-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: right;
+        -ms-flex-align: right;
+            align-items: right;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    padding-right: 5px;
+    padding-bottom: 15px;
+  }
+  body footer div .redes-1 .redes-2 .link {
+    color: white;
+  }
+  body footer div .redes-1 .redes-2 .redeslogo {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  body footer div .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+  }
+  body footer div .logo .texto {
+    margin: 8px;
+  }
+  body footer div .logo .logofooter {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 1820px) and (min-width: 1200px) {
+  body header {
+    background-color: #383838;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  body main .imghome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main section .vendido__titulo {
+    margin: 0%;
+    padding: 15px 35px 15px 35px;
+    text-align: center;
+    background-color: blanchedalmond;
+    font-family: 'Roboto', sans-serif;
+    color: #383838;
+    font-size: 190%;
+  }
+  body main .vendido {
+    color: grey;
+    background: blanchedalmond;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 4fr 4fr;
+        grid-template-columns: 4fr 4fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  body main .vendido .box {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .vendido .box img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .vendido .box .hover {
+    width: 0%;
+    height: 100%;
+    background-color: rgba(56, 53, 53, 0.568);
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    -webkit-transition: .4s all;
+    transition: .4s all;
+  }
+  body main .vendido .box .hover h4 {
+    font-family: 'Quicksand', sans-serif;
+    color: aliceblue;
+    text-shadow: 1 px 1 px 1 px black;
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+  body main .vendido .box:hover .hover {
+    width: 100%;
+  }
+  body main .opiniones__titulo {
+    margin: 0;
+    padding: 15px 35px 15px 35px;
+    text-align: center;
+    background-color: blanchedalmond;
+    font-family: 'Quicksand', sans-serif;
+    color: #383838;
+    font-size: 140%;
+  }
+  body main .opiniones {
+    background: blanchedalmond;
+    color: #3e3e3f;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr 1.5fr 1.5fr;
+        grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  body main .opiniones .opiniones__persona {
+    padding: 20px 20px 30px 30px;
+    margin: 40px 40px 40px 40px;
+    border: 2px;
+    background-color: rgba(230, 230, 230, 0.925);
+    display: inline-block;
+  }
+  body main .opiniones .opiniones__persona:hover {
+    background-color: rgba(85, 80, 65, 0.5);
+  }
+  body main .opiniones .opiniones__persona .fotopersona {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .opiniones .opiniones__persona .estrella {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .milanesa__titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    margin: 0%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    text-align: center;
+    background-color: #6b7a8f;
+  }
+  body main .milanesa {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+    background-color: blanchedalmond;
+  }
+  body main .milanesa .milanesa__lista {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+  }
+  body main .milanesa .milanesa__lista:hover {
+    background-color: ghostwhite;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  body main .titulo {
+    padding: 0%;
+    margin: 0%;
+  }
+  body main .titulo .sandwiches__titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    margin: 0%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    text-align: center;
+    background-color: #6b7a8f;
+  }
+  body main .sandwiches {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+    justify-items: center;
+    background-color: blanchedalmond;
+  }
+  body main .sandwiches .sandwiches__lista {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+  }
+  body main .sandwiches .sandwiches__lista:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    background-color: ghostwhite;
+  }
+  body main .guarnicion {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.2fr 0.2fr;
+        grid-template-columns: 0.2fr 0.2fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: blanchedalmond;
+  }
+  body main .guarnicion .guarnicion__lista {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+  }
+  body main .guarnicion .guarnicion__lista:hover {
+    background-color: ghostwhite;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  body main section .guarnicion__titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    margin: 0%;
+    padding: 15px;
+    text-align: center;
+    background-color: #6b7a8f;
+  }
+  body main .tiposdepago h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 250%;
+    margin: 0%;
+    padding: 25px;
+    text-align: center;
+    background-color: blanchedalmond;
+  }
+  body main .tiposdepago .metodo {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 0.2fr 0.2fr 0.2fr;
+        grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    align-items: center;
+    background-color: blanchedalmond;
+  }
+  body main .tiposdepago .metodo div .titulometodos {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    margin: 10%;
+    color: gray;
+  }
+  body main .tiposdepago .metodo div .imgmetodos {
+    width: 205px;
+  }
+  body main .tiposdepago .metodo div .imgmetodos:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  body main .pedidowhatsapp {
+    padding: 25px 2px 25px 2px;
+    background-color: blanchedalmond;
+    font-family: 'Quicksand', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  body main .historia {
+    background-color: blanchedalmond;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  body main .historia .historia__titulo {
+    font-style: inherit;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  body main .historia .historia__cuadro {
+    padding: 80px 80px 80px 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 100px;
+    margin-top: 25px;
+    border-radius: 2%;
+    background-color: whitesmoke;
+  }
+  body main .historia .historia__cuadro .portadahistoria {
+    width: 850px;
+    float: left;
+    margin-right: 2%;
+  }
+  body main .trabajaconnosotros {
+    background-color: wheat;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Quicksand', sans-serif;
+    padding: 50px 50px 50px 50px;
+  }
+  body main .trabajaconnosotros .trabajaconnosotros__titulo {
+    font-size: 180%;
+    font-weight: bold;
+  }
+  body main .sumate {
+    font-weight: bold;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: wheat;
+  }
+  body main .contactoTitulo {
+    background-color: gainsboro;
+    color: #ee930a;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  body .contacto {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+    align-items: center;
+    margin: 0;
+  }
+  body .contacto .horario {
+    background-color: blanchedalmond;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .contacto .horario .horario__titulo {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+  }
+  body .contacto .tabla {
+    background-color: blanchedalmond;
+    text-align: right;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+  }
+  body footer {
+    background-color: #363636;
+    color: ghostwhite;
+    font-family: 'Quicksand', sans-serif;
+  }
+  body footer div .link {
+    color: white;
+  }
+  body footer div .pie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    text-align: left;
+    font-size: 100%;
+    line-height: 30px;
+  }
+  body footer div .redes-1 {
+    padding-top: 0;
+    padding-right: 10px;
+  }
+  body footer div .redes-1 .link {
+    color: white;
+  }
+  body footer div .redes-1 .pie1 {
+    text-align: right;
+    font-size: 100%;
+    line-height: 30px;
+  }
+  body footer div .redes-1 .redes-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: right;
+        -ms-flex-align: right;
+            align-items: right;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    padding-right: 5px;
+    padding-bottom: 15px;
+  }
+  body footer div .redes-1 .redes-2 .link {
+    color: white;
+  }
+  body footer div .redes-1 .redes-2 .redeslogo {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  body footer div .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+  }
+  body footer div .logo .texto {
+    margin: 8px;
+  }
+  body footer div .logo .logofooter {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+  body header {
+    background-color: #383838;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  body main .imghome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main section .vendido__titulo {
+    margin: 0%;
+    padding: 15px 35px 15px 35px;
+    text-align: center;
+    background-color: blanchedalmond;
+    font-family: 'Roboto', sans-serif;
+    color: #383838;
+    font-size: 190%;
+  }
+  body main .vendido {
+    color: grey;
+    background: blanchedalmond;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 370px 370px;
+        grid-template-columns: 370px 370px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  body main .vendido .box {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .vendido .box img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .vendido .box .hover {
+    width: 0%;
+    height: 100%;
+    background-color: rgba(56, 53, 53, 0.568);
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    -webkit-transition: .4s all;
+    transition: .4s all;
+  }
+  body main .vendido .box .hover h4 {
+    font-family: 'Quicksand', sans-serif;
+    color: aliceblue;
+    text-shadow: 1 px 1 px 1 px black;
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+  body main .vendido .box:hover .hover {
+    width: 100%;
+  }
+  body main .opiniones__titulo {
+    margin: 0;
+    padding: 15px 35px 15px 35px;
+    text-align: center;
+    background-color: blanchedalmond;
+    font-family: 'Quicksand', sans-serif;
+    color: #383838;
+    font-size: 140%;
+  }
+  body main .opiniones {
+    background: blanchedalmond;
+    color: #3e3e3f;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 370px 370px;
+        grid-template-columns: 370px 370px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  body main .opiniones .opiniones__persona {
+    padding: 20px 20px 30px 30px;
+    margin: 40px 40px 40px 40px;
+    border: 2px;
+    background-color: rgba(230, 230, 230, 0.925);
+    display: inline-block;
+  }
+  body main .opiniones .opiniones__persona:hover {
+    background-color: rgba(85, 80, 65, 0.5);
+  }
+  body main .opiniones .opiniones__persona .fotopersona {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .opiniones .opiniones__persona .estrella {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .milanesa__titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    margin: 0%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    text-align: center;
+    background-color: #6b7a8f;
+  }
+  body main .milanesa {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    background-color: blanchedalmond;
+  }
+  body main .milanesa .milanesa__lista {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+  }
+  body main .milanesa .milanesa__lista:hover {
+    background-color: ghostwhite;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  body main .titulo {
+    padding: 0%;
+    margin: 0%;
+  }
+  body main .titulo .sandwiches__titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    margin: 0%;
+    padding-bottom: 1%;
+    text-align: center;
+    background-color: #6b7a8f;
+  }
+  body main .sandwiches {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    justify-items: center;
+    background-color: blanchedalmond;
+  }
+  body main .sandwiches .sandwiches__lista {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+  }
+  body main .sandwiches .sandwiches__lista:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    background-color: ghostwhite;
+  }
+  body main .guarnicion {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: blanchedalmond;
+  }
+  body main .guarnicion .guarnicion__lista {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+  }
+  body main .guarnicion .guarnicion__lista:hover {
+    background-color: ghostwhite;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  body main section .guarnicion__titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    margin: 0%;
+    padding: 15px;
+    text-align: center;
+    background-color: #6b7a8f;
+  }
+  body main .tiposdepago h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    border: none;
+    margin: 0%;
+    padding: 25px;
+    text-align: center;
+    background-color: blanchedalmond;
+  }
+  body main .tiposdepago .metodo {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 0.2fr 0.2fr 0.2fr;
+        grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    align-items: center;
+    background-color: blanchedalmond;
+  }
+  body main .tiposdepago .metodo div .titulometodos {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 105%;
+    margin: 10%;
+    color: gray;
+  }
+  body main .tiposdepago .metodo div .imgmetodos {
+    width: 105px;
+  }
+  body main .tiposdepago .metodo div .imgmetodos:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  body main .pedidowhatsapp {
+    padding: 25px 2px 25px 2px;
+    background-color: blanchedalmond;
+    font-family: 'Quicksand', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  body main .pedidowhatsapp h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 105%;
+    margin: 1%;
+  }
+  body main .historia {
+    background-color: blanchedalmond;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .historia .historia__titulo {
+    font-style: inherit;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  body main .historia .historia__cuadro {
+    padding: 80px 80px 80px 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 100px;
+    margin-top: 25px;
+    border-radius: 2%;
+    background-color: whitesmoke;
+    display: block;
+  }
+  body main .historia .historia__cuadro .portadahistoria {
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+  body main .historia .historia__cuadro .textohistoria {
+    text-align: center;
+    display: block;
+  }
+  body main .trabajaconnosotros {
+    background-color: wheat;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Quicksand', sans-serif;
+    padding: 50px 50px 50px 50px;
+  }
+  body main .trabajaconnosotros .trabajaconnosotros__titulo {
+    font-size: 180%;
+    font-weight: bold;
+  }
+  body main .sumate {
+    font-weight: bold;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: wheat;
+  }
+  body main .contactoTitulo {
+    background-color: gainsboro;
+    color: #ee930a;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  body .contacto {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    align-items: center;
+    margin: 0;
+  }
+  body .contacto .mensaje {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 200px;
+        grid-template-columns: 200px;
+    margin: 0;
+  }
+  body .contacto .horario {
+    background-color: blanchedalmond;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  body .contacto .horario .horario__titulo {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+  }
+  body .contacto .horario .tabla {
+    background-color: blanchedalmond;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 180%;
+    width: 100%;
+  }
+  body footer {
+    background-color: #363636;
+    color: ghostwhite;
+    font-family: 'Quicksand', sans-serif;
+  }
+  body footer div .link {
+    color: white;
+  }
+  body footer div .pie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    text-align: left;
+    font-size: 100%;
+    line-height: 30px;
+  }
+  body footer div .redes-1 {
+    padding-top: 0;
+    padding-right: 10px;
+  }
+  body footer div .redes-1 .link {
+    color: white;
+  }
+  body footer div .redes-1 .pie1 {
+    text-align: right;
+    font-size: 100%;
+    line-height: 30px;
+  }
+  body footer div .redes-1 .redes-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: right;
+        -ms-flex-align: right;
+            align-items: right;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    padding-right: 5px;
+    padding-bottom: 15px;
+  }
+  body footer div .redes-1 .redes-2 .link {
+    color: white;
+  }
+  body footer div .redes-1 .redes-2 .redeslogo {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  body footer div .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+  }
+  body footer div .logo .texto {
+    margin: 8px;
+  }
+  body footer div .logo .logofooter {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  body header {
+    background-color: #383838;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  body main .imghome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main section .vendido__titulo {
+    margin: 0%;
+    padding: 15px 35px 15px 35px;
+    text-align: center;
+    background-color: blanchedalmond;
+    font-family: 'Roboto', sans-serif;
+    color: #383838;
+    font-size: 120%;
+  }
+  body main .vendido {
+    color: grey;
+    background: blanchedalmond;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 170px 170px;
+        grid-template-columns: 170px 170px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  body main .vendido .box {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .vendido .box img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .vendido .box .hover {
+    width: 0%;
+    height: 100%;
+    background-color: rgba(56, 53, 53, 0.568);
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    -webkit-transition: .4s all;
+    transition: .4s all;
+  }
+  body main .vendido .box .hover h4 {
+    font-family: 'Quicksand', sans-serif;
+    color: aliceblue;
+    text-shadow: 1 px 1 px 1 px black;
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+  body main .vendido .box:hover .hover {
+    width: 100%;
+  }
+  body main .vendido .boton {
+    font-size: 50%;
+  }
+  body main .opiniones__titulo {
+    margin: 0;
+    padding: 15px 35px 15px 35px;
+    text-align: center;
+    background-color: blanchedalmond;
+    font-family: 'Quicksand', sans-serif;
+    color: #383838;
+    font-size: 120%;
+  }
+  body main .opiniones {
+    background: blanchedalmond;
+    color: #3e3e3f;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 360px;
+        grid-template-columns: 360px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    padding-bottom: 20%;
+  }
+  body main .opiniones .comentarios {
+    font-size: 100%;
+  }
+  body main .opiniones .opiniones__persona {
+    padding: 10px 10px 10px 10px;
+    margin: 5;
+    border: 2px;
+    background-color: rgba(230, 230, 230, 0.925);
+    display: block;
+  }
+  body main .opiniones .opiniones__persona:hover {
+    background-color: rgba(85, 80, 65, 0.5);
+  }
+  body main .opiniones .opiniones__persona .fotopersona {
+    width: 50px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .opiniones .opiniones__persona .estrella {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .milanesa__titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+    margin: 0%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    text-align: center;
+    background-color: #6b7a8f;
+  }
+  body main .milanesa {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 70%;
+    font-size: medium;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 4fr;
+        grid-template-columns: 4fr;
+    grid-gap: 2px;
+    background-color: blanchedalmond;
+  }
+  body main .milanesa .milanesa__lista {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+  }
+  body main .milanesa .milanesa__lista:hover {
+    background-color: ghostwhite;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  body main .titulo {
+    padding: 0%;
+    margin: 0%;
+  }
+  body main .titulo .sandwiches__titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+    margin: 0%;
+    padding-bottom: 1%;
+    /*operaciones*/
+    padding-top: 1%;
+    text-align: center;
+    background-color: #6b7a8f;
+  }
+  body main .sandwiches {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 4fr;
+        grid-template-columns: 4fr;
+    grid-gap: 2px;
+    justify-items: center;
+    background-color: blanchedalmond;
+  }
+  body main .sandwiches .sandwiches__lista {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+  }
+  body main .sandwiches .sandwiches__lista:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    background-color: ghostwhite;
+  }
+  body main .guarnicion {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 4fr;
+        grid-template-columns: 4fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: blanchedalmond;
+  }
+  body main .guarnicion .guarnicion__lista {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+  }
+  body main .guarnicion .guarnicion__lista:hover {
+    background-color: ghostwhite;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  body main section .guarnicion__titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+    margin: 0%;
+    padding: 15px;
+    text-align: center;
+    background-color: #6b7a8f;
+  }
+  body main .tiposdepago h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    border: none;
+    margin: 0%;
+    padding: 25px;
+    text-align: center;
+    background-color: blanchedalmond;
+  }
+  body main .tiposdepago .metodo {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 4fr;
+        grid-template-columns: 4fr;
+    align-items: center;
+    background-color: blanchedalmond;
+  }
+  body main .tiposdepago .metodo div .titulometodos {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 95%;
+    margin: 10%;
+    color: gray;
+  }
+  body main .tiposdepago .metodo div .imgmetodos {
+    width: 105px;
+  }
+  body main .tiposdepago .metodo div .imgmetodos:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  body main .pedidowhatsapp {
+    padding: 25px 2px 25px 2px;
+    background-color: blanchedalmond;
+    font-family: 'Quicksand', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  body main .pedidowhatsapp h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 95%;
+    margin: 1%;
+  }
+  body main .historia {
+    background-color: blanchedalmond;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .historia .historia__titulo {
+    font-style: inherit;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  body main .historia .historia__cuadro {
+    padding: 50px 20px 50px 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 100px;
+    margin-top: 25px;
+    border-radius: 2%;
+    background-color: whitesmoke;
+    display: block;
+  }
+  body main .historia .historia__cuadro .portadahistoria {
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+  body main .historia .historia__cuadro .textohistoria {
+    font-size: 70%;
+    text-align: center;
+    display: block;
+  }
+  body main .trabajaconnosotros {
+    background-color: wheat;
+    text-align: center;
+    font-size: 70%;
+    font-family: 'Quicksand', sans-serif;
+    padding: 50px 50px 50px 50px;
+  }
+  body main .trabajaconnosotros .trabajaconnosotros__titulo {
+    font-size: 180%;
+    font-weight: bold;
+  }
+  body main .sumate {
+    font-weight: bold;
+    text-align: center;
+    font-size: 95%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: wheat;
+  }
+  body main .sumate .flecha {
+    width: 10px;
+  }
+  body main .contactoTitulo {
+    background-color: gainsboro;
+    color: #ee930a;
+    font-weight: bold;
+    text-align: center;
+    font-size: 120%;
+    margin: 0;
+  }
+  body .contacto {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    align-items: center;
+    margin: 0;
+  }
+  body .contacto .mensaje {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 200px;
+        grid-template-columns: 200px;
+    margin: 0;
+  }
+  body .contacto .horario {
+    background-color: blanchedalmond;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  body .contacto .horario .descripcionhorario {
+    text-align: center;
+    margin: 0;
+    font-size: 70%;
+  }
+  body .contacto .horario .horario__titulo {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+  }
+  body .contacto .horario .tabla {
+    background-color: blanchedalmond;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 180%;
+    width: 100%;
+  }
+  body footer {
+    background-color: #363636;
+    color: ghostwhite;
+    font-family: 'Quicksand', sans-serif;
+  }
+  body footer div .link {
+    color: white;
+  }
+  body footer div .pie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    text-align: left;
+    font-size: 70%;
+    line-height: 30px;
+  }
+  body footer div .redes-1 {
+    padding-top: 0;
+    padding-right: 10px;
+  }
+  body footer div .redes-1 .link {
+    color: white;
+  }
+  body footer div .redes-1 .pie1 {
+    text-align: right;
+    font-size: 70%;
+    line-height: 30px;
+  }
+  body footer div .redes-1 .redes-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: right;
+        -ms-flex-align: right;
+            align-items: right;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    padding-right: 5px;
+    padding-bottom: 15px;
+  }
+  body footer div .redes-1 .redes-2 .link {
+    color: white;
+  }
+  body footer div .redes-1 .redes-2 .redeslogo {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 25px;
+    height: 25px;
+  }
+  body footer div .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+  }
+  body footer div .logo .texto {
+    margin: 8px;
+    font-size: 70%;
+  }
+  body footer div .logo .logofooter {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  body header {
+    background-color: #383838;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  body main .imghome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main section .vendido__titulo {
+    margin: 0%;
+    padding: 15px 35px 15px 35px;
+    text-align: center;
+    background-color: blanchedalmond;
+    font-family: 'Roboto', sans-serif;
+    color: #383838;
+    font-size: 120%;
+  }
+  body main .vendido {
+    color: grey;
+    background: blanchedalmond;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    /*operaciones*/
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr 1.5fr;
+        grid-template-columns: 1.5fr 1.5fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  body main .vendido .box {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .vendido .box img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .vendido .box .hover {
+    width: 0%;
+    height: 100%;
+    background-color: rgba(56, 53, 53, 0.568);
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    -webkit-transition: .4s all;
+    transition: .4s all;
+  }
+  body main .vendido .box .hover h4 {
+    font-family: 'Quicksand', sans-serif;
+    color: aliceblue;
+    text-shadow: 1 px 1 px 1 px black;
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+  body main .vendido .box:hover .hover {
+    width: 100%;
+  }
+  body main .vendido .boton {
+    font-size: 50%;
+  }
+  body main .opiniones__titulo {
+    margin: 0;
+    padding: 15px 35px 15px 35px;
+    text-align: center;
+    background-color: blanchedalmond;
+    font-family: 'Quicksand', sans-serif;
+    color: #383838;
+    font-size: 120%;
+  }
+  body main .opiniones {
+    background: blanchedalmond;
+    color: #3e3e3f;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 320px;
+        grid-template-columns: 320px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    padding-bottom: 20%;
+  }
+  body main .opiniones .comentarios {
+    font-size: 100%;
+  }
+  body main .opiniones .opiniones__persona {
+    padding: 10px 10px 10px 10px;
+    margin: 5;
+    border: 2px;
+    background-color: rgba(230, 230, 230, 0.925);
+    display: block;
+  }
+  body main .opiniones .opiniones__persona:hover {
+    background-color: rgba(85, 80, 65, 0.5);
+  }
+  body main .opiniones .opiniones__persona .fotopersona {
+    width: 50px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .opiniones .opiniones__persona .estrella {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .milanesa__titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+    margin: 0%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    text-align: center;
+    background-color: #6b7a8f;
+  }
+  body main .milanesa {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 70%;
+    font-size: medium;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr;
+        grid-template-columns: 1.5fr;
+    grid-gap: 2px;
+    background-color: blanchedalmond;
+  }
+  body main .milanesa .milanesa__lista {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+  }
+  body main .milanesa .milanesa__lista .imgmenu {
+    width: 250px;
+  }
+  body main .milanesa .milanesa__lista:hover {
+    background-color: ghostwhite;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  body main .titulo {
+    padding: 0%;
+    margin: 0%;
+  }
+  body main .titulo .sandwiches__titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+    margin: 0%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    text-align: center;
+    background-color: #6b7a8f;
+  }
+  body main .sandwiches {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr;
+        grid-template-columns: 1.5fr;
+    grid-gap: 2px;
+    justify-items: center;
+    background-color: blanchedalmond;
+  }
+  body main .sandwiches .sandwiches__lista {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+  }
+  body main .sandwiches .sandwiches__lista .imgmenu {
+    width: 250px;
+  }
+  body main .sandwiches .sandwiches__lista:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    background-color: ghostwhite;
+  }
+  body main .guarnicion {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr;
+        grid-template-columns: 1.5fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: blanchedalmond;
+  }
+  body main .guarnicion .guarnicion__lista {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+  }
+  body main .guarnicion .guarnicion__lista .imgmenu {
+    width: 250px;
+  }
+  body main .guarnicion .guarnicion__lista:hover {
+    background-color: ghostwhite;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  body main section .guarnicion__titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+    margin: 0%;
+    padding: 15px;
+    text-align: center;
+    background-color: #6b7a8f;
+  }
+  body main .tiposdepago h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    border: none;
+    margin: 0%;
+    padding: 25px;
+    text-align: center;
+    background-color: blanchedalmond;
+  }
+  body main .tiposdepago .metodo {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 1.5fr;
+        grid-template-columns: 1.5fr;
+    align-items: center;
+    background-color: blanchedalmond;
+  }
+  body main .tiposdepago .metodo div .titulometodos {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 95%;
+    margin: 10%;
+    color: gray;
+  }
+  body main .tiposdepago .metodo div .imgmetodos {
+    width: 105px;
+  }
+  body main .tiposdepago .metodo div .imgmetodos:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  body main .pedidowhatsapp {
+    padding: 25px 2px 25px 2px;
+    background-color: blanchedalmond;
+    font-family: 'Quicksand', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  body main .pedidowhatsapp h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 95%;
+    margin: 1%;
+  }
+  body main .historia {
+    background-color: blanchedalmond;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .historia .historia__titulo {
+    font-style: inherit;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  body main .historia .historia__cuadro {
+    padding: 50px 20px 50px 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 100px;
+    margin-top: 25px;
+    border-radius: 2%;
+    background-color: whitesmoke;
+    display: block;
+  }
+  body main .historia .historia__cuadro .portadahistoria {
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+  body main .historia .historia__cuadro .textohistoria {
+    font-size: 70%;
+    text-align: center;
+    display: block;
+  }
+  body main .trabajaconnosotros {
+    background-color: wheat;
+    text-align: center;
+    font-size: 70%;
+    font-family: 'Quicksand', sans-serif;
+    padding: 50px 50px 50px 50px;
+  }
+  body main .trabajaconnosotros .trabajaconnosotros__titulo {
+    font-size: 180%;
+    font-weight: bold;
+  }
+  body main .sumate {
+    font-weight: bold;
+    text-align: center;
+    font-size: 95%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: wheat;
+  }
+  body main .sumate .flecha {
+    width: 10px;
+  }
+  body main .contactoTitulo {
+    background-color: gainsboro;
+    color: #ee930a;
+    font-weight: bold;
+    text-align: center;
+    font-size: 120%;
+    margin: 0;
+  }
+  body .contacto {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 1.5fr;
+        grid-template-columns: 1.5fr;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+  }
+  body .contacto .mensaje {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 220px;
+        grid-template-columns: 220px;
+    margin: 0;
+  }
+  body .contacto .horario {
+    background-color: blanchedalmond;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150%;
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 1.5fr;
+        grid-template-columns: 1.5fr;
+  }
+  body .contacto .horario .descripcionhorario {
+    text-align: center;
+    margin: 0;
+    font-size: 50%;
+  }
+  body .contacto .horario .horario__titulo {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 70%;
+  }
+  body .contacto .horario .tabla {
+    width: 100%;
+    background-color: blanchedalmond;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 0.2fr;
+        grid-template-columns: 0.2fr;
+    margin: 0;
+    padding: 0;
+  }
+  body footer {
+    background-color: #363636;
+    color: ghostwhite;
+    font-family: 'Quicksand', sans-serif;
+  }
+  body footer div .link {
+    color: white;
+  }
+  body footer div .pie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    text-align: left;
+    font-size: 70%;
+    line-height: 30px;
+  }
+  body footer div .redes-1 {
+    padding-top: 0;
+    padding-right: 10px;
+  }
+  body footer div .redes-1 .link {
+    color: white;
+  }
+  body footer div .redes-1 .pie1 {
+    text-align: right;
+    font-size: 70%;
+    line-height: 30px;
+  }
+  body footer div .redes-1 .redes-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: right;
+        -ms-flex-align: right;
+            align-items: right;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    padding-right: 5px;
+    padding-bottom: 15px;
+  }
+  body footer div .redes-1 .redes-2 .link {
+    color: white;
+  }
+  body footer div .redes-1 .redes-2 .redeslogo {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 25px;
+    height: 25px;
+  }
+  body footer div .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+  }
+  body footer div .logo .texto {
+    margin: 8px;
+    font-size: 70%;
+  }
+  body footer div .logo .logofooter {
+    width: 200px;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
